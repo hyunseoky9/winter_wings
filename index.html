@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+	<form>
+		<h2>관찰 기록</h2>
+		관찰자 이름<input type="text" name="name"></input></br>
+		날짜<input type="text" name="date" placeholder="31/12/2017"></input></br>
+		장소<input type="text" name="place"> <span>(주소를 입력하시거나 지도에서 관찰 장소를 클릭해 주세요)</span></input></br>
+		<p> GPS 좌표</p>
+		x <input type="text" name="gpsx"></input></br>
+		y <input type="text" name="gpsy"></input></br>
+		관찰 시간<input type="text" name="time"></input></br>
+		<div>
+			<h3>모이 주는 타입</h3>
+			<select>
+			  <option value="No-tube-feeder">튜브 없는 피더</option>
+			  <option value="Feed-on-the-ground">땅에서 먹음</option>
+			  <option value="high-up-feeder">높이 있는 피더</option>
+			</select>
+		</div>
+		<div>
+			<h3>주변 환경</h3>
+			<b>환경 조건</b><select>
+				<option value="urban">도시</option>
+				<option value="agro">농지</option>
+				<option value="forest">숲</option>
+				<option value="aquatic">물주변 (슾지,강,바다 등)</option>
+			</select></br>
+			<b>기온</b> <input type="text" name="temp"></input></br>
+			<b>강수</b> </br>
+			형태 <input type="text" name="precip-type" placeholder="눈,비,눈/비,없음"></input></br>
+			언제 <select>
+					<option value="None">없음</option>
+					<option value="1st">1차 조사때</option>
+					<option value="2nd">2차 조사때</option>
+					<option value="subseq">다음 차수에</option>
+				</select>
+			어떻게 <select>
+					<option value="partially">잠깐씩</option>
+					<option value="continuously">계속</option>
+				</select>
+			눈덮임 </br>
+				<input type="radio" name="snow" value="none"> 없음 </input></br>
+				<input type="radio" name="snow" value="5under"> 5cm > </input></br>
+				<input type="radio" name="snow" value="5to15"> 5cm-15cm </input></br>
+				<input type="radio" name="snow" value="15over"> 15cm < </input></br>
+			쌓인눈 상태 </br>
+				<input type="radio" name="snow-cond1" value="crust"> 눈위가 얼음 </input></br>
+				<input type="radio" name="snow-cond2" value="patchy"> 눈이 드문드문 있음 </input></br>
+		</div>
+	</form>
+</div>
+</body>
+</html>
