@@ -5,11 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel='stylesheet' type='text/css' href= "{{url_for('static', filename='style.css')}}">
+	<link rel='stylesheet' type='text/css' href= "{{url_for('static', filename='css/style.css')}}">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Rammetto+One" rel="stylesheet">
 	{% endblock %}
 </head>
 {% block menu %}
-<h1> This is a menu </h1>
+</br>
+<div class='container'>
+	<div class='row'>
+		<div class='col-sm-1'>
+			<img class='nav_icon' src="{{url_for('static', filename='img/winterwings_bird2.png')}}">
+		</div>
+		<div class='col-sm-11'>
+			<table class='navtable'>
+				<tr>
+					<td><a href=''>About</a></td>
+					<td><a href=''>How to Participate</a></td>
+					<td><a href=''>Protocol</a></td>
+					<td><a href=''>Team</a></td>
+					<td><a href=''>Contact</a></td>
+					<td><a href="{{url_for('form')}}"><button class='button'><b>Submit Observation!</b></button></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='h-25 col-sm-12'>
+		</div>
+	</div>
+</div>
 {% endblock %}
 
 <body>
@@ -17,8 +41,27 @@
 </body>
 
 {% block footer %}
-<footer class="footer">
-	<h1> This is a footer </h1>
-</footer>
-{% endblock}
+<!--div class='container'>
+	<div class='row'>
+		<footer class="footer">
+			<p>In partnership with:</p>
+			<div class='col-sm-2 col-half-offset'>
+				<div><img src="{{url_for('static', filename='img/birds_korea.webp')}}"></div>
+			</div>
+			<div class='col-sm-2 col-half-offset'>
+				<div><img src="{{url_for('static', filename='img/birding_korea.webp')}}"></div>
+			</div>
+			<div class='col-sm-2 col-half-offset'>
+				<div><img src="{{url_for('static', filename='img/donga.webp')}}"></div>
+			</div>
+			<div class='col-sm-2 col-half-offset'>
+				<div><img src="{{url_for('static', filename='img/ewha.webp')}}"></div>
+			</div>
+			<div class='col-sm-2 col-half-offset'>
+				<div><img src="{{url_for('static', filename='img/paris_museum.webp')}}"></div>
+			</div>
+		</footer>
+	</div>
+</div-->
+{% endblock %}
 </html>

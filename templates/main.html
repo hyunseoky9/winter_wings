@@ -1,6 +1,147 @@
 {% extends "nav_layout.html" %}
 
 {% block body %}
-<h1> This is a body yoyo </h1>
+
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-12'>
+			<center><img class='banner' src="{{url_for('static', filename='img/original.webp')}}"></center>
+			<h3 class='subtitle'><i>Korean Winter Birds Monitoring Project</i></h3>
+			</br></br></br>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-12'>
+			<h2>What is Winter Wings?</h2>
+			<p><b>Winter Wings </b>is a Citizen Science project conducted by researchers of <b>Ewha Womans Univertsity</b> and the <b>National Museum of Natural History of Paris</b>.
+			 
+			This project aims to set up a <b>winter long term monitoring of birds in Korea</b>. Observations can be done <b>as many times as you want, where you want</b>, as long as you follow <b>our protocol</b>!
+			 
+			The data collected will <b>help scientists to better understand birds populations</b> composition, distribution and abondance in Korea.
+			 
+			This program is supported by companies, organisation and a networks of birders such as <b>Donga Science, Birds Korea</b> and <b>Birding Korea.</b>
+			 
+			<b>Join us!</b> </p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-12'>
+			<h2>Anyone can participate!</h2>
+			<p>The data are collected by volonteers of all ages and skills levels following the <b>protocol</b>. We provide you some documentation so that you can learn about the most common birds and how to identify them.</br>
+			<b>The more data we have, the better it is for our analysis!</b></p>
+			<a href="{{url_for('form')}}"><button class='button'><b>Submit Observation!</b></button></a>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-12'>
+			<h2> Protocol </h2>
+			<h4> Why should I follow the protocol?</h4>
+			<p><b>A scientific protocol</b> is a reproductible method which allow scientists <b>to compare the observations between each other</b> and answer to some research questions.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-12'>
+			<h4>How does it work?</h4>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-3'>
+			<div class='step-box'><p class='stepboxnum'>1</p></div>
+			<h4 class='step-title'><b>Choose an observation site and note the GPS coordinates</b></h4>
+			<p class='step-exp'>If you want, you can install a feeder. In this case, the feeder and its surroundings will be your observation site</p>
+		</div>
+		<div class='col-sm-3'>
+			<div class='step-box'><p class='stepboxnum'>2</p></div>
+			<h4 class='step-title'><b>Observe the birds according to the protocol</b></h4>
+			<p class='step-exp'>You need to observe birds around you during 2 sessions of 5 minutes. You count the maximum of individuals of the same species seen in the same time</p>
+		</div>
+		<div class='col-sm-3'>
+			<div class='step-box'><p class='stepboxnum'>3</p></div>
+			<h4 class='step-title'><b>Send us your data</b></h4>
+			<p class='step-exp'>Send us your data by filling the <a>survey form</a></p>
+		</div>
+		<div class='col-sm-3'>
+			<div class='step-box'><p class='stepboxnum'>4</p></div>
+			<h4 class='step-title'><b>... and do it again!</b></h4>
+			<p class='step-exp'>Do it whenever, wherever, as many times as you want! The more the better for our analysis!</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-12'>
+			<h4>How to watch?</h4>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-8'>
+			<p>A five minute observation is all you need!</p>
+			<ul>
+				<li>count 5 minute observation as a session. (you can optionally do 2 additional 10 minutes sessions)</li>
+				<li>Take into account <b>all the birds than you can see around you</b>: birds in the feeders, bushes and trees, on the ground, or flying in the area</li>
+				<li>Make a tally and count the <b>maximum of individuals in view</b></li>
+				<li>If there are no birds during the period when you count, <b>write “No birds”</b></li>
+			</ul>
+		</div>
+		<div class='col-sm-4'>
+			<img class='howto' src="{{url_for('static', filename='img/howtowatch.webp')}}">
+		</div>	
+	</div>
+	<div class='row'>
+		<div class='col-sm-12'>
+		</br>
+		<a href="{{url_for('static', filename='download/something.pdf')}}" download> [[Download the protocol]] </a>
+		</div>
+	</div>
+</br></br></br>
+	<div class='row'>
+		<div class='col-sm-12'>
+			<h2>Who are we?</h2>
+			<h3><b>A bunch of over-motivated scientists!!</b></h3>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-3'>
+			<img class='teampic' src="{{url_for('static', filename='img/jang.webp')}}">
+			<p>Pr.Yikweon Jang</p>
+			<p><b>Ewha Womans University, Division of EcoScience</b></p>
+			<p>Prof. Jang is leading the laboratory of Animal Communication belonging to the EcoScience Division.</p>
+		</div>
+		<div class='col-sm-3'>
+			<img class='teampic' src="{{url_for('static', filename='img/hortense.webp')}}">
+			<p>Dr.Hortense Serret</p>
+			<p><b>Ewha Womans University, Division of EcoScience</b></p>
+			<p>Dr. Hortense Serret is a post-doctoral researcher in cherge of the development and coordiantion of citizen science programs in Korea</p>
+		</div>
+		<div class='col-sm-3'>
+			<img class='teampic' src="{{url_for('static', filename='img/nial.webp')}}">
+			<p>Dr.Nial Moors</p>
+			<p><b>Birds Korea</b></p>
+			<p>Dr. Nial Moores is the Director of Birds Korea, a legally-registered specialized NGO dedicated to the conservation of birds and their habitats in Korea and the wider Yellow Sea Ecoregion.Dr. Moores has worked for more than 25 years in East Asia, conducting research and helping to develop and support education and awareness raising programs.</p>
+		</div>
+		<div class='col-sm-3'>
+			<img class='teampic' src="{{url_for('static', filename='img/romain.webp')}}">
+			<p>Dr.Romain Lorillière</p>
+			<p><b>National Museum of Natural History of Paris (France), Center for Ecology and Conservation Sciences (CESCO)</b></p>
+			<p>Dr.Romain Lorillère is a post-doctoral researcher. As a conservation biologist his work focuses on understanding how macro-ecological processes drive spatial dynamic patterns of populations and communities.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-12'>
+			<h3 class='connect'>Connect With Us</h3>
+			<p class='connect-exp'><i>Questions? Remarks? Let's stay in touch!</i></p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-6'>
+			<center><a href='https://www.facebook.com/Winter-Wings-Korea-1460567027385568/'><img class='social' src="{{url_for('static', filename='img/fb-icon.png')}}"></a>
+				<p>get updates through facebook page!</p></center>
+		</div>
+		<div class='col-sm-6'>
+			<center><a href='mailto:winterwings.korea@gmail.com'><img class='social' src="{{url_for('static', filename='img/email-icon.png')}}"></a>
+			<p>winterwings.korea@gmail.com</p></center>
+		</div>
+	</div>
+
+</div>
+
+
 {% endblock body %}
-	
