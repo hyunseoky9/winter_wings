@@ -133,3 +133,10 @@ input[type="text"] input[type="button"]{
 	width: 30%;
 	height: 30%;
 }
+
+
+/**************************************************************************/
+/* form page css */
+#sp-count {
+	display: none;
+}
