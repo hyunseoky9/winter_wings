@@ -38,7 +38,6 @@
 								$("#year").append("<option value=y"+ (i) + ">"+(i)+"</option>");
 							}
 						</script>
-<<<<<<< HEAD
 					</select>년</br>
 				</div>
 				<div class='time'>
@@ -136,15 +135,20 @@
 					<option value="10to20">10~20</option>
 					<option value="20over">20이상</option>
 				</select></br></br>
-				<b class='font120' name='precip-type'>강수</b> </br>
-				형태 <input type="text" name="precip-type" placeholder="눈, 비, 눈/비, 없음"></input></br>
-				언제 <select>
+				<b class='font120'>강수</b> </br>
+				형태 <select name='precip-type'>
+						<option value="snow">눈</option>
+						<option value="rain">비</option>
+						<option value="sleet">눈/비</option>
+						<option value="none">없음</option>
+					</select> </br>
+				언제 <select name='precip-when'>
 						<option value="None">없음</option>
 						<option value="1st">1차 조사때</option>
 						<option value="2nd">2차 조사때</option>
 						<option value="subseq">다음 차수에</option>
 					</select><br>
-				어떻게 <select name='precip-when'>
+				어떻게 <select name='precip-how'>
 						<option value="partially">잠깐씩</option>
 						<option value="continuously">계속</option>
 					</select><br>

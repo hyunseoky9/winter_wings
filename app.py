@@ -20,9 +20,9 @@ def form():
 		filename = str(date.today().year) + str(date.today().month) + str(date.today().day)
 		fh = open('./data/'+ filename +'.csv','w')
 		name = request.form['name']
-		date = request.form['day'] + '/' + request.form['month'] + '/' + request.form['year']
-		start = request.form['hr'] + ':' request.form['min'] + request.form['ampm']
-		finish = request.form['hr2'] + ':' request.form['min2'] + request.form['ampm2']
+		obsdate = request.form['day'] + '/' + request.form['month'] + '/' + request.form['year']
+		start = request.form['hr'] + ':' + request.form['min'] + request.form['ampm']
+		finish = request.form['hr2'] + ':' + request.form['min2'] + request.form['ampm2']
 		place = request.form['place']
 		lat = request.form['lat']
 		lng = request.form['lng']
