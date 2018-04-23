@@ -26,8 +26,8 @@ for(i=0; i<korean_name.length; i++){
 
 //add species on the table
 var after_default_id = korean_name.length;
+document.getElementById('sp-count').value = after_default_id
 $("#species-add-button").click(function() {
-	
 	string = "<tr><td>"+"<input type='text' name='sp-name-"+after_default_id+"'></td>"+
 	"<td><input type='text' name='count"+after_default_id+"-1'></td>"+
 	"<td><input type='text' name='count"+after_default_id+"-2'></td>"+
@@ -35,13 +35,15 @@ $("#species-add-button").click(function() {
 	"<td><input type='text' name='count"+after_default_id+"-4'></td></tr>"
 	;
 	$("#species-add").before(string);
-	after_default += 1;
+	after_default_id += 1;
+	document.getElementById('sp-count').value = after_default_id;
+	console.log($("#sp-count").val());
 });
 
 function initMap() {
-	/*TODO 
-	zoom to marker 
-	geocode 
+	/*TODO
+	zoom to marker
+	geocode
 	put it into gps input.
 	gps to marker.
 	*/
@@ -106,7 +108,6 @@ function initMap() {
 			latlng = {lat: lat,lng: lng};
 			console.log(latlng);
 			if(theresCircle == 0){
-				console.log("YO");
 				drawCircle(radius,latlng);
 				theresCircle = 1;
 			} else {
