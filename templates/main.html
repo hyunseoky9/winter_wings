@@ -10,9 +10,10 @@
 			</br></br></br>
 		</div>
 	</div>
+<div class='yellow'>
 	<div class='row'>
 		<div class='col-md-12'>
-			<h2>What is Winter Wings?</h2>
+			<h2 id='about' class='headings1'>What is Winter Wings?</h2>
 			<p><b>Winter Wings </b>is a Citizen Science project conducted by researchers of <b>Ewha Womans Univertsity</b> and the <b>National Museum of Natural History of Paris</b>.
 			 
 			This project aims to set up a <b>winter long term monitoring of birds in Korea</b>. Observations can be done <b>as many times as you want, where you want</b>, as long as you follow <b>our protocol</b>!
@@ -22,28 +23,34 @@
 			This program is supported by companies, organisation and a networks of birders such as <b>Donga Science, Birds Korea</b> and <b>Birding Korea.</b>
 			 
 			<b>Join us!</b> </p>
+		</br></br></br>
 		</div>
+
 	</div>
 	<div class='row'>
 		<div class='col-md-12'>
-			<h2>Anyone can participate!</h2>
+			<h2 id='participate' class='headings1'>Anyone can participate!</h2>
 			<p>The data are collected by volonteers of all ages and skills levels following the <b>protocol</b>. We provide you some documentation so that you can learn about the most common birds and how to identify them.</br>
 			<b>The more data we have, the better it is for our analysis!</b></p>
 			<a href="{{url_for('form')}}"><button class='button'><b>Submit Observation!</b></button></a>
 		</div>
 	</div>
+	</br></br></br>
+</div>
 	<div class='row'>
 		<div class='col-md-12'>
-			<h2> Protocol </h2>
-			<h4> Why should I follow the protocol?</h4>
+			<h2 id='protocol' class='headings1'> Protocol </h2>
+			<h4 class='headings2'> Why should I follow the protocol?</h4>
 			<p><b>A scientific protocol</b> is a reproductible method which allow scientists <b>to compare the observations between each other</b> and answer to some research questions.</p>
 		</div>
 	</div>
+</br>
 	<div class='row'>
 		<div class='col-sm-12'>
-			<h4>How does it work?</h4>
+			<h4 class='headings2'>How does it work?</h4>
 		</div>
 	</div>
+</br>
 	<div class='row'>
 		<div class='col-sm-3'>
 			<div class='step-box'><p class='stepboxnum'>1</p></div>
@@ -66,12 +73,13 @@
 			<p class='step-exp'>Do it whenever, wherever, as many times as you want! The more the better for our analysis!</p>
 		</div>
 	</div>
+</br>
 	<div class='row'>
 		<div class='col-sm-12'>
-			<h4>How to watch?</h4>
+			<h4 class='headings2'>How to watch?</h4>
 		</div>
 	</div>
-	<div class='row'>
+	<div class='row '>
 		<div class='col-sm-8'>
 			<p>A five minute observation is all you need!</p>
 			<ul>
@@ -92,10 +100,11 @@
 		</div>
 	</div>
 </br></br></br>
+<div class='yellow'>
 	<div class='row'>
 		<div class='col-sm-12'>
-			<h2>Who are we?</h2>
-			<h3><b>A bunch of over-motivated scientists!!</b></h3>
+			<h2 id='team' class='headings1'>Who are we?</h2>
+			<h4><b>A bunch of over-motivated scientists!</b></h3>
 		</div>
 	</div>
 	<div class='row'>
@@ -124,24 +133,25 @@
 			<p>Dr.Romain Lorillère is a post-doctoral researcher. As a conservation biologist his work focuses on understanding how macro-ecological processes drive spatial dynamic patterns of populations and communities.</p>
 		</div>
 	</div>
+</br></br></br>
+</div>
 	<div class='row'>
 		<div class='col-sm-12'>
-			<h3 class='connect'>Connect With Us</h3>
+			<h3 id='contact' class='connect'>Contact Us</h3>
 			<p class='connect-exp'><i>Questions? Remarks? Let's stay in touch!</i></p>
 		</div>
 	</div>
 	<div class='row'>
 		<div class='col-sm-6'>
 			<center><a href='https://www.facebook.com/Winter-Wings-Korea-1460567027385568/'><img class='social' src="{{url_for('static', filename='img/fb-icon.png')}}"></a>
-				<p>get updates through facebook page!</p></center>
+				<p>get updates through our facebook page!</p></center>
 		</div>
 		<div class='col-sm-6'>
 			<center><a href='mailto:winterwings.korea@gmail.com'><img class='social' src="{{url_for('static', filename='img/email-icon.png')}}"></a>
 			<p>winterwings.korea@gmail.com</p></center>
 		</div>
 	</div>
-
 </div>
-
+</br></br>
 
 {% endblock body %}
