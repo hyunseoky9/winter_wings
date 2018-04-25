@@ -1,0 +1,16 @@
+name,
+day,d1/m1/y2020
+hr,h0:m0am
+hr2,h0:m0am
+place,
+lat,
+lng,
+radius,
+feeder,No-tube-feeder
+env,urban
+temp,-18under
+precip-type,snow
+precip-when,None
+precip-how,partially
+snowcover,none
+snowcondition,crust

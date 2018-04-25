@@ -165,10 +165,13 @@ input[type="text"] input[type="button"]{
 
 .yellow {
 	background-color: #fffdd0;
-	width: 30%;
+	width: 100%;
 	height: 30%;
 }
 
+.person-name {
+	font-size: 150%;
+}
 
 /**************************************************************************/
 /* form page css */

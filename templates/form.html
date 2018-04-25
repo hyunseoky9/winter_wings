@@ -19,6 +19,7 @@
 				</div>
 				<div class='date'>
 					날짜: <select id="day" name='day'>
+						<option value=""></option>
 						<script>
 							for(i=0; i<31; i++){
 								$("#day").append("<option value=d"+ (i+1) + ">"+(i+1)+"</option>");
@@ -26,6 +27,7 @@
 						</script>
 					</select>일
 					<select id="month" name='month'>
+						<option value=""></option>
 						<script>
 							for(i=0; i<12; i++){
 								$("#month").append("<option value=m"+ (i+1) + ">"+(i+1)+"</option>");
@@ -33,6 +35,7 @@
 						</script>
 					</select>월
 					<select id="year" name='year'>
+						<option value=""></option>
 						<script>
 							for(i=2020; i>1999; i--){
 								$("#year").append("<option value=y"+ (i) + ">"+(i)+"</option>");
@@ -42,6 +45,7 @@
 				</div>
 				<div class='time'>
 					관찰 시간: <select id="hr" name="hr">
+						<option value=""></option>
 						<script>
 							for(i=0; i<13; i++) {
 								$("#hr").append("<option value=h"+(i)+">"+(i)+"</option>");
@@ -49,6 +53,7 @@
 						</script>
 					</select>
 					<select id="min" name='min'>
+						<option value=""></option>
 						<script>
 							for(i=0; i<61; i++) {
 								$("#min").append("<option value=m"+(i)+">"+(i)+"</option>");
@@ -56,10 +61,12 @@
 						</script>
 					</select>
 					<select id="ampm" name='ampm'>
+							<option value=""></option>
 							<option value="am">AM</option>
 							<option value="pm">PM</option>
 					</select> - 
 					<select id="hr2" name='hr2'>
+						<option value=""></option>
 						<script>
 							for(i=0; i<13; i++) {
 								$("#hr2").append("<option value=h"+(i)+">"+(i)+"</option>");
@@ -67,6 +74,7 @@
 						</script>
 					</select>
 					<select id="min2" name='min2'>
+						<option value=""></option>
 						<script>
 							for(i=0; i<61; i++) {
 								$("#min2").append("<option value=m"+(i)+">"+(i)+"</option>");
@@ -74,6 +82,7 @@
 						</script>
 					</select>
 					<select id="ampm2" name='ampm2'>
+							<option value=""></option>
 							<option value="am">AM</option>
 							<option value="pm">PM</option>
 					</select>
@@ -97,12 +106,6 @@
 				<input type="button" value="찾기" id="gps_search"></br>
 			</div>
 		</div>
-</br>
-		<div class='row'>
-			<div class='col-sm-12'>	
-				<div id="map">map</div>
-			</div>
-		</div>
 		<div class='row'>
 			<div class='col-sm-12'>
 				<div style='margin-top:1%'><div>
@@ -111,23 +114,33 @@
 		</div>
 </br>
 		<div class='row'>
+			<div class='col-sm-12'>	
+				<div id="map">map</div>
+			</div>
+		</div>
+
+</br>
+		<div class='row'>
 			<div class='col-sm-12'>
 				</br>
 				<br>
 				<b class='font120'>주변 환경</b><br>
 				<b>모이 주는 타입</b>
 					<select name='feeder'>
+					  <option value=""></option>
 					  <option value="No-tube-feeder">피더 없음</option>
 					  <option value="Feed-on-the-ground">땅에서 먹음</option>
 					  <option value="high-up-feeder">높이 있는 피더</option>
 					</select><br>
 				<b>환경 조건</b> &nbsp<select name='env'>
+					<option value=""></option>
 					<option value="urban">도시</option>
 					<option value="agro">농지</option>
 					<option value="forest">숲</option>
 					<option value="aquatic">물주변 (슾지,강,바다 등)</option>
 				</select></br>
 				<b>기온</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name='temp'>
+					<option value=""></option>
 					<option value="-18under">-18이하</option>
 					<option value="-18to-10">-18~-10</option>
 					<option value="-10to0">-10~0</option>
@@ -137,28 +150,33 @@
 				</select></br></br>
 				<b class='font120'>강수</b> </br>
 				형태 <select name='precip-type'>
+					    <option value=""></option>
 						<option value="snow">눈</option>
 						<option value="rain">비</option>
 						<option value="sleet">눈/비</option>
 						<option value="none">없음</option>
 					</select> </br>
 				언제 <select name='precip-when'>
+						<option value=""></option>
 						<option value="None">없음</option>
 						<option value="1st">1차 조사때</option>
 						<option value="2nd">2차 조사때</option>
 						<option value="subseq">다음 차수에</option>
 					</select><br>
 				어떻게 <select name='precip-how'>
+						<option value=""></option>
 						<option value="partially">잠깐씩</option>
 						<option value="continuously">계속</option>
 					</select><br>
 				눈덮임 <select name='snowcover'>
+					<option value=""></option>
 					<option value="none"> 없음 </option>
 					<option value="5under"> 5cm > </option>
 					<option value="5to15"> 5cm-15cm </option>
 					<option value="15over"> 15cm < </option>
 				</select></br>
 				쌓인눈 상태 <select name='snowcondition'>
+					<option value=""></option>
 					<option value="crust"> 눈위가 얼음 </option>
 					<option value="patchy"> 눈이 드문드문 있음 </option>
 				</select>

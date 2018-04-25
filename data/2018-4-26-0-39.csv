@@ -1,0 +1,46 @@
+name,
+day,//
+hr,:
+hr2,:
+place,
+lat,
+lng,
+radius,
+feeder,
+env,
+temp,
+precip-type,
+precip-when,
+precip-how,
+snowcover,
+snowcondition,
+Accipiter nisus,0,0,0,0
+Buteo japonicus,0,0,0,0
+Falco tinnunculus,0,0,0,0
+Streptopelia orientalis,0,0,0,0
+Columba livia,0,0,0,0
+Dendrocopos kizuki,0,0,0,0
+Dendrocopos major,0,0,0,0
+Picus canus,0,0,0,0
+Motacilla alba,0,0,0,0
+Phoenicurus auroreus,0,0,0,0
+Turdus eunomus,0,0,0,0
+Turdus naumanni,0,0,0,0
+Poecile palustris,0,0,0,0
+Periparus ater,0,0,0,0
+Sittiparus varius,0,0,0,0
+Parus minor,0,0,0,0
+Aegithalos caudatus,0,0,0,0
+Sinosuthera webbiana,0,0,0,0
+Sitta europaea,0,0,0,0
+Lanius bucephalus,0,0,0,0
+Hypsipetes amaurotis,0,0,0,0
+Pica pica,0,0,0,0
+Garrulus glandarius,0,0,0,0
+Corvus macrorhynchos,0,0,0,0
+Corvus corone,0,0,0,0
+Spodiopsar cineraceus,0,0,0,0
+Passer montanus,0,0,0,0
+Fringilla montifringilla,0,0,0,0
+Chloris sinica,0,0,0,0
+Coccothraustes coccothraustes,0,0,0,0
